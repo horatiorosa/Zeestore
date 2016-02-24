@@ -2,17 +2,94 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face{
+	font-family: nellaSue;
+	// src: url(nellaSue.ttf);
+	src: url(https://fonts.googleapis.com/css?family=Qwigley);
+}
 
-$testColors: rgb(49, 129, 78);
+// @import url(https://fonts.googleapis.com/css?family=Qwigley);
+
+
+
+$testColors: #6E93FF;
+$defUnit: 10px;
+$charcoal: #2C3030;
+
+
+body {
+	font-size: $defUnit*5; 
+	font-family: nellaSue;
+	padding: 0px;
+	margin: 0px;
+}
 
 .testColors {
-	background-color: $testColors;
+	background-color: #FDFFF2;
+	color: $charcoal;
+	font-size: $defUnit*5;
+	font-family: nellaSue;
+	text-shadow: 3px 3px 8px #383D3D;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
+
 
 #border {
-	border: solid red 10px;
+	color: $testColors;
+	width: 200px; 
+	float: left;
+	margin-top: $defUnit;
 }
 
-p {
-	font-size: 4em;
+.alert {
+	box-shadow: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.notice {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav {
+	li{
+	display: inline-block;
+	text-decoration: none;
+	font-size: $defUnit*1.8;
+	margin: 30px 20px 10px 20px;
+	}
+	
+}
+
+ul {
+	li{
+		list-style-type: none;
+		float: right;
+		display: inline-block;
+		margin: $defUnit;
+	}
+}
+
+#searchBox {
+	float: right;
+	margin-top: 50px;
+	position: relative;
+	right: -200px;
+}
+
+#search {
+	width: 120px;
+	height: 25px; 
+	font-size: 16px;
+}
+
+#submit {
+	width: 30px;
+	height: 25px;
+	font-size: 16px; 
 }
